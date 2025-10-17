@@ -28,7 +28,7 @@ SoftUni JS Back-End Workshop
 - [x] Add routes
 - [x] Abolity to parse user data
 - [ ] Create Movie
-    - [ ] Add action
-    - [ ] Add service
+    - [x] Add action
+    - [x] Add service
     - [ ] Add model method for creating movie
 ---
