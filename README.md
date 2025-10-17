@@ -8,5 +8,5 @@ SoftUni JS Back-End Workshop
 - [x] Add workshop resources
 - [x] Setup Handlebars
 - [x] Setup static files
-- [ ] Render Home page
+- [x] Render Home page
 - [ ] Config debugging
