@@ -23,8 +23,8 @@ SoftUni JS Back-End Workshop
 - [x] Show no movies screen
 
 ### Create movie
-- [ ] Add Movie Controller
-- [ ] Create Movie page
+- [x] Add Movie Controller
+- [x] Create Movie page
 - [ ] Add routes
 - [ ] Abolity to parse user data
 - [ ] Create Movie
