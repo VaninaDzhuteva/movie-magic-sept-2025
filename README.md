@@ -7,4 +7,6 @@ SoftUni JS Back-End Workshop
 - [x] Add Expres Server
 - [x] Add workshop resources
 - [x] Setup Handlebars
+- [x] Setup static files
 - [ ] Render Home page
+- [ ] Config debugging
