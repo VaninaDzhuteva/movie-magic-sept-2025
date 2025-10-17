@@ -30,5 +30,8 @@ SoftUni JS Back-End Workshop
 - [ ] Create Movie
     - [x] Add action
     - [x] Add service
-    - [ ] Add model method for creating movie
+    - [x] Add model method for creating movie
+- [x] Redirect after movie creation
+- [x] Add unique id for each created movie
+
 ---

@@ -3,18 +3,15 @@ import movieService from "../services/movieService.js";
 
 const movieController = Router();
 
-movieController.get('/movies/create', (req, res) => {
-    console.log(req.body);
-    
+movieController.get('/create', (req, res) => {    
     res.render('create');
 });
 
-movieController.post('/movies/create', (req, res) => {
-    console.log(req.body);
+movieController.post('/create', (req, res) => {
+    const movieData = req.body;
+    movieService.create(movieData);
 
-    movieService.create(req.body);
-
-    res.end();
+    res.redirect('/');
 });
 
 export default movieController;
