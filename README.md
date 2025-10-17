@@ -26,7 +26,7 @@ SoftUni JS Back-End Workshop
 - [x] Add Movie Controller
 - [x] Create Movie page
 - [x] Add routes
-- [ ] Add 404
+- [x] Add 404
 - [x] Abolity to parse user data
 - [x] Create Movie
     - [x] Add action
@@ -38,8 +38,14 @@ SoftUni JS Back-End Workshop
 ---
 
 ### Details page
+- [x] Add navigation button for detail page
+- [ ] Add route with param for details page
+- [ ] Getone movie from service
+- [ ] Find movie by id from model
+- [ ] Render details page with dynamic data
 
 ### Search page
+
 
 ### Bonuses
 - [ ] Files Persistance
