@@ -10,3 +10,5 @@ SoftUni JS Back-End Workshop
 - [x] Setup Handlebars
 - [x] Setup static files
 - [x] Render Home page
+- [x] Add Layout
+- [x] Render About Page
