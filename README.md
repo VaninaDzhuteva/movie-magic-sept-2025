@@ -5,6 +5,6 @@ SoftUni JS Back-End Workshop
 
 - [x] Initialize project
 - [x] Add Expres Server
-- [ ] Add workshop resources
+- [x] Add workshop resources
 - [ ] Setup Handlebars
 - [ ] Render Home page
