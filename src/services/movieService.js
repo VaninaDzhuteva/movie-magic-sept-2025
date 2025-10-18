@@ -4,6 +4,10 @@ function getAll() {
     return Movie.find();
 }
 
+function getOne(movieId) {
+    return Movie.find({_id: movieId});
+}
+
 function create(movieData) {
    const movie = new Movie(movieData);
    return movie.save();
@@ -11,5 +15,5 @@ function create(movieData) {
 
 
 export default {
-    getAll, create
+    getAll, create, getOne
 }
