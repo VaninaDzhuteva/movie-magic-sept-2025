@@ -62,6 +62,7 @@ export default class Movie {
 
     if (filter.title) {
       // Partial match,case insensitive
+      result = result.filter(movie => movie.title.toLowerCase().includes(filter.title.toLowerCase()));
     }
 
     if (filter.genre) {

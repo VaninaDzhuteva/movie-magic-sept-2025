@@ -45,10 +45,10 @@ SoftUni JS Back-End Workshop
 - [x] Render details page with dynamic data
 
 ### Search page
-- [ ] Show static search page
-- [ ] Render all movies
-- [ ] Modify search form
-- [ ] Filter movies
+- [x] Show static search page
+- [x] Render all movies
+- [x] Modify search form
+- [x] Filter movies
 - [ ] Remember search words
 
 ### Bonuses
