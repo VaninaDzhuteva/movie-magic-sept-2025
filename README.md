@@ -45,7 +45,12 @@ SoftUni JS Back-End Workshop
 - [x] Render details page with dynamic data
 
 ### Search page
-
+- [ ] Show static search page
+- [ ] Render all movies
+- [ ] Modify search form
+- [ ] Filter movies
+- [ ] Remember search words
 
 ### Bonuses
 - [ ] Files Persistance
+- [ ] Rating
