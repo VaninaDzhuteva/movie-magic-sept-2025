@@ -5,7 +5,7 @@ function getAll() {
 }
 
 function getOne(movieId) {
-    return Movie.find({_id: movieId});
+    return Movie.findOne({_id: movieId});
 }
 
 function create(movieData) {
