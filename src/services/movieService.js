@@ -5,13 +5,14 @@ function getAll(filter) {
 }
 
 function getOne(movieId) {
-    return Movie.findOne({_id: movieId});
+    return Movie.findOne({ _id: movieId });
 }
 
 function create(movieData) {
-   const movie = new Movie(movieData);
-   return movie.save();
-}   
+    movieData.rating = Number(movieData.rating);
+    const movie = new Movie(movieData);
+    return movie.save();
+}
 
 
 export default {
