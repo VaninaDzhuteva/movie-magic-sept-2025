@@ -42,7 +42,7 @@ SoftUni JS Back-End Workshop
 - [x] Add route with param for details page
 - [x] Getone movie from service
 - [x] Find movie by id from model
-- [ ] Render details page with dynamic data
+- [x] Render details page with dynamic data
 
 ### Search page
 
