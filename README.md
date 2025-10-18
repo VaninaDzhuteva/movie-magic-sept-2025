@@ -52,6 +52,6 @@ SoftUni JS Back-End Workshop
 - [ ] Remember search words
 
 ### Bonuses
-- [ ] Dynamic title page
+- [x] Dynamic title page
 - [ ] Files Persistance
-- [ ] Rating
+- [x] Rating
