@@ -1,6 +1,6 @@
 <section id="search">
     <h1>Search</h1>
-    <form method="POST" class="form">
+    <form "GET" class="form">
         <input type="text" class="search" name="title" placeholder="Title...">
         <input type="text" name="genre" class="genre" placeholder="Genre...">
         <input type="number" name="year" class="year" placeholder="Year...">
@@ -12,7 +12,7 @@
     <div class="band">
 
         {{#each movies}}
-        {{>movie}}
+            {{>movie}}
         {{else}}
         <!-- If there are no posts matched display: -->
         <div class="no-posts">

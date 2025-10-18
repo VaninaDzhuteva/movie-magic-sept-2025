@@ -1,7 +1,7 @@
 import Movie from "../models/Movies.js";
 
-function getAll() {
-    return Movie.find();
+function getAll(filter) {
+    return Movie.find(filter);
 }
 
 function getOne(movieId) {
