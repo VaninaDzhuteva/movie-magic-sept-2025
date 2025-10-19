@@ -17,7 +17,6 @@ try {
 
     console.log('Successfully connected to the database!');
     
-
 } catch (err) {
     console.log('Could not connect to database!');
     console.log(err);
@@ -25,7 +24,11 @@ try {
 
 // Setup Handlebars
 app.engine('hbs', handlebars.engine({
-    extname: 'hbs'
+    extname: 'hbs',
+    runtimeOptions: {
+        allowProtoMethodsByDefault: true,
+        allowProtoPropertiesByDefault: true
+    }
 }));
 
 app.set('view engine', 'hbs');

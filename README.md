@@ -72,6 +72,9 @@ SoftUni JS Back-End Workshop
 - [x] Add movie model
     - [x] Create movie schema
     - [x] Create movie model
+- [x] Import file movies to database
+- [x] Fix own property handlebars problem with lean method
+- [x] General fix for own property problem
 - [ ] Refactor movie Service
 
 - [ ] Add new resources

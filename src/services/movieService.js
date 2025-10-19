@@ -1,7 +1,8 @@
 import Movie from "../models/Movie.js";
 
 async function getAll(filter) {
-    const result = await Movie.find(filter).lean();
+    // const result = await Movie.find(filter).lean();
+    const result = await Movie.find(filter);
     return result;
 }
 
