@@ -1,7 +1,6 @@
-import { log } from "console";
 import Movie from "../models/Movie.js";
 
-function getAll(filter) {
+function getAll(filter = {}) {
     // const result = await Movie.find(filter).lean();
     let query = Movie.find();
 
