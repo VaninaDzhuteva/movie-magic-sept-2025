@@ -12,8 +12,12 @@ function getOne(movieId) {
 
 function create(movieData) {
     movieData.rating = Number(movieData.rating);
-    const movie = new Movie(movieData);
-    return movie.save();
+
+    // const movie = new Movie(movieData);
+    // return movie.save();
+
+    // Mongoose
+    return Movie.create(movieData);
 }
 
 
