@@ -37,7 +37,6 @@ function create(movieData) {
     return Movie.create(movieData);
 }
 
-
 export default {
     getAll, create, getOne
 }

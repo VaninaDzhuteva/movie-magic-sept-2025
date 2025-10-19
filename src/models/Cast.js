@@ -15,7 +15,7 @@ const castSchema = new Schema({
         type: String,
         required: true
     },
-    name: {
+    castImage: {
         type: String,
         required: true
     },
