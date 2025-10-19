@@ -1,6 +1,8 @@
 # movie-magic-sept-2025
 SoftUni JS Back-End Workshop
 
+## Workshop 1 - Express and Templating
+
 ### Development steps
 
 - [x] Initialize project
@@ -53,5 +55,20 @@ SoftUni JS Back-End Workshop
 
 ### Bonuses
 - [x] Dynamic title page
-- [ ] Files Persistance
+- [x] Files Persistance
 - [x] Rating
+
+## Workshop 2 - MongoDB Database
+
+### Prerequisities
+- [x] Install MongoDB Community Server
+- [x] Install Compass GUI
+- [x] Install Mongosh CLI (Optional)
+
+### Setup
+- [ ] Install mongoose and connect to DB
+
+### Refactor Movies to use mongoose
+- [ ] Add movie model
+
+- [ ] Add new resources
