@@ -69,7 +69,9 @@ SoftUni JS Back-End Workshop
 - [x] Install mongoose and connect to DB
 
 ### Refactor Movies to use mongoose
-- [ ] Add movie model
-    - [ ] Create movie schema
+- [x] Add movie model
+    - [x] Create movie schema
+    - [x] Create movie model
+- [ ] Refactor movie Service
 
 - [ ] Add new resources
