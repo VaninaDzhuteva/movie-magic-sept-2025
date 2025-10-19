@@ -75,6 +75,18 @@ SoftUni JS Back-End Workshop
 - [x] Import file movies to database
 - [x] Fix own property handlebars problem with lean method
 - [x] General fix for own property problem
-- [ ] Refactor movie Service
+- [x] Refactor movie Service
 
-- [ ] Add new resources
+### Add Cast
+- [x] Add new resources
+- [ ] Add cast model
+- [ ] Add Cast service
+- [ ] Add Cast Controller
+
+### Attach Cast to Movie
+
+### Show Cast on Details
+
+
+### Bonuses
+- [ ] Env variables
