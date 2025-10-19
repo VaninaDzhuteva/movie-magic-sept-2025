@@ -24,6 +24,8 @@ SoftUni JS Back-End Workshop
 - [x] Render movies on home page
 - [x] Show no movies screen
 
+---
+
 ### Create movie
 - [x] Add Movie Controller
 - [x] Create Movie page
@@ -88,6 +90,7 @@ SoftUni JS Back-End Workshop
 ### Attach Cast to Movie (relation)
 - [x] Add attach cast button
 - [ ] Add attach cast page
+- [ ] Add dynamic data to cast page
 - [ ] Add relation between cast and movie
 - [ ] Attach cast functionallity
 
