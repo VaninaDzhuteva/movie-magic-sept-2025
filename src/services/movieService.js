@@ -1,4 +1,4 @@
-import Movie from "../models/Movies.js";
+import Movie from "../models/Movie.js";
 
 function getAll(filter) {
     return Movie.find(filter);
