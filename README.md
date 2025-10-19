@@ -79,9 +79,11 @@ SoftUni JS Back-End Workshop
 
 ### Add Cast
 - [x] Add new resources
-- [ ] Add cast model
+- [x] Add Cast Controller
+- [ ] Create Cast page
+- [ ] Add Cast model
 - [ ] Add Cast service
-- [ ] Add Cast Controller
+- [ ] Create Cast Functionallity
 
 ### Attach Cast to Movie
 
