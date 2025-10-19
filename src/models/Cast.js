@@ -15,7 +15,7 @@ const castSchema = new Schema({
         type: String,
         required: true
     },
-    castImage: {
+    imageUrl: {
         type: String,
         required: true
     },
