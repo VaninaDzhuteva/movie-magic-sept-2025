@@ -27,6 +27,10 @@ function getOne(movieId) {
     return Movie.findById(movieId);
 }
 
+function getOneDetailed(movieId) {
+  return this.getOne(movieId).populate('casts');
+}
+
 function create(movieData) {
     movieData.rating = Number(movieData.rating);
 
@@ -47,5 +51,5 @@ async function attach(movieId, castId) {
 }
 
 export default {
-    getAll, create, getOne, attach
+    getAll, create, getOne, attach, getOneDetailed
 }

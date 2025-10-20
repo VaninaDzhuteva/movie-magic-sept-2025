@@ -97,8 +97,8 @@ SoftUni JS Back-End Workshop
 
 ### Show Cast on Details (population)
 - [x] Get movie casts filtered
-- [ ] Show casts on details page
-- [ ] Using population
+- [x] Show casts on details page
+- [ ] Get movie cast using population
 
 ### Bonuses
 - [ ] Env variables
