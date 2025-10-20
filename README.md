@@ -98,11 +98,11 @@ SoftUni JS Back-End Workshop
 ### Show Cast on Details (population)
 - [x] Get movie casts filtered
 - [x] Show casts on details page
-- [ ] Get movie cast using population
+- [x] Get movie cast using population
 
 ### Bonuses
+- [x] Filter casts if they are already attached
 - [ ] Env variables
 - [ ] name in a movie
-- [ ] Filter casts if they are already attached
 - [ ] Add movie views to a folder
 - [ ] Back refference from vscode
