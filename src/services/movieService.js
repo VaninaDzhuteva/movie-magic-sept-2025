@@ -41,6 +41,9 @@ async function attach(movieId, castId) {
   const movie = await Movie.findById(movieId);
   movie.casts.push(castId);
   return movie.save();
+
+  // Add relation with MongoDB
+  //return Movie.findByIdAndUpdate(movieId, {$push: {casts: castId}});
 }
 
 export default {
