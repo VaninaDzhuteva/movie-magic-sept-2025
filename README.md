@@ -96,7 +96,9 @@ SoftUni JS Back-End Workshop
 - [x] Attach cast functionallity
 
 ### Show Cast on Details (population)
-
+- [x] Get movie casts filtered
+- [ ] Show casts on details page
+- [ ] Using population
 
 ### Bonuses
 - [ ] Env variables
