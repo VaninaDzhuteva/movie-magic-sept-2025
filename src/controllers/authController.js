@@ -12,7 +12,7 @@ authController.post('/register', async (req, res) => {
 
     await userService.register(userData);
 
-    res.redirect('/');
+    res.redirect('/login');
 });
 
 authController.get('/login', (req, res) => {
@@ -24,7 +24,9 @@ authController.post('/login', async (req, res) => {
 
     const token = await userService.login(email, password);
 
-    res.end();
+    res.cookie('auth', token);
+
+    res.redirect('/');
 });
 
 export default authController;

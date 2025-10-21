@@ -125,4 +125,5 @@ SoftUni JS Back-End Workshop
 - [x] Handle login page
 - [x] Validate User
 - [x] Validate password
-- [ ] Create token
+- [x] Create token
+- [ ] Return token to client
