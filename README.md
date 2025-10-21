@@ -132,9 +132,10 @@ SoftUni JS Back-End Workshop
 - [x] Add logout; clear cookie
 
 ### Authorization
-- [ ] Install cookie-parser
-- [ ] Add auth middleware
-- [ ] Validate user authenitacation
+- [x] Install cookie-parser
+- [x] Add auth middleware
+- [x] Validate user authenitacation
+- [x] Add route guard
 
 ### Dynamic navigation
 
