@@ -140,6 +140,8 @@ SoftUni JS Back-End Workshop
 
 
 ### Dynamic navigation
+- [x] Group navigation by user type
+- [x] Add auth info to handlebars context
 
 ### Edit movies
 
