@@ -138,10 +138,13 @@ SoftUni JS Back-End Workshop
 - [x] Add isAuth route guard
 - [x] Add isGuest route guard
 
-
 ### Dynamic navigation
 - [x] Group navigation by user type
 - [x] Add auth info to handlebars context
+
+### Show dynamic buttons on details page
+- [x] Add edit and delete buttons on details page
+- [ ] Show button only for creators
 
 ### Edit movies
 
