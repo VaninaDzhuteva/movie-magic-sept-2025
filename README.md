@@ -135,7 +135,9 @@ SoftUni JS Back-End Workshop
 - [x] Install cookie-parser
 - [x] Add auth middleware
 - [x] Validate user authenitacation
-- [x] Add route guard
+- [x] Add isAuth route guard
+- [x] Add isGuest route guard
+
 
 ### Dynamic navigation
 
