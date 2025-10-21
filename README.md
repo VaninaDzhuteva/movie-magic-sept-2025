@@ -132,6 +132,9 @@ SoftUni JS Back-End Workshop
 - [x] Add logout; clear cookie
 
 ### Authorization
+- [ ] Install cookie-parser
+- [ ] Add auth middleware
+- [ ] Validate user authenitacation
 
 ### Dynamic navigation
 

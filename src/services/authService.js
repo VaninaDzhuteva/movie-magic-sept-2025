@@ -2,14 +2,13 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
 import User from "../models/User.js";
+import { JWT_SECRET } from '../config/constans.js';
 
-const JWT_SECRET = 'efufhiwefi';
-
-function register(userData) {
-    return User.create(userData);
+async function register(userData) {
+    return await User.create(userData);
 }
 
-async function login(username, password) {
+async function login(email, password) {
     // Validate user
     const user = await User.findOne({email});
 
