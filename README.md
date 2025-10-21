@@ -15,16 +15,12 @@ SoftUni JS Back-End Workshop
 - [x] Add Layout
 - [x] Render About Page
 
----
-
 ### Architecture and dynamic rendering
 - [x] Add home controller
 - [x] Add movie data layer
 - [x] Add movie service
 - [x] Render movies on home page
 - [x] Show no movies screen
-
----
 
 ### Create movie
 - [x] Add Movie Controller
@@ -38,8 +34,6 @@ SoftUni JS Back-End Workshop
     - [x] Add model method for creating movie
 - [x] Redirect after movie creation
 - [x] Add unique id for each created movie
-
----
 
 ### Details page
 - [x] Add navigation button for detail page
@@ -59,6 +53,8 @@ SoftUni JS Back-End Workshop
 - [x] Dynamic title page
 - [x] Files Persistance
 - [x] Rating
+
+---
 
 ## Workshop 2 - MongoDB Database
 
@@ -100,9 +96,19 @@ SoftUni JS Back-End Workshop
 - [x] Show casts on details page
 - [x] Get movie cast using population
 
+
 ### Bonuses
 - [x] Filter casts if they are already attached
 - [ ] Env variables
 - [ ] name in a movie
 - [ ] Add movie views to a folder
 - [ ] Back refference from vscode
+
+---
+
+## Workshop 3 - Session and Authentication
+
+### Initial Setup
+- [x] Add resources
+
+### Registration
