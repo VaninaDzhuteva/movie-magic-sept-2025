@@ -31,14 +31,13 @@ function getOneDetailed(movieId) {
   return this.getOne(movieId).populate('casts');
 }
 
-function create(movieData) {
-    movieData.rating = Number(movieData.rating);
-
-    // const movie = new Movie(movieData);
-    // return movie.save();
-
+function create(movieData, userId) {
     // Mongoose
-    return Movie.create(movieData);
+    return Movie.create({
+      ...movieData,
+      rating: Number(movieData.rating),
+      creator: userId
+    });
 }
 
 async function attach(movieId, castId) {
