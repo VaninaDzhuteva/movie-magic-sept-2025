@@ -118,3 +118,11 @@ SoftUni JS Back-End Workshop
 - [x] Add User Service
 - [x] Handle registration
 - [x] Add password hashing
+
+
+### Login 
+- [ ] Add login page
+- [ ] Handle login page
+- [ ] Validate User
+- [ ] Validate password
+- [ ] Create token
