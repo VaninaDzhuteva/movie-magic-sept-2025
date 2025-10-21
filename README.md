@@ -121,8 +121,8 @@ SoftUni JS Back-End Workshop
 
 
 ### Login 
-- [ ] Add login page
-- [ ] Handle login page
-- [ ] Validate User
-- [ ] Validate password
+- [x] Add login page
+- [x] Handle login page
+- [x] Validate User
+- [x] Validate password
 - [ ] Create token
