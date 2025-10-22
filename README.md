@@ -149,8 +149,8 @@ SoftUni JS Back-End Workshop
 - [x] Show button only for creators
 
 ### Edit movies
-- [ ] Add edit page
-
+- [x] Add edit page
+- [x] Add dynamic data in edit form
 
 ### Delete movies
 - [x] Add delete action
