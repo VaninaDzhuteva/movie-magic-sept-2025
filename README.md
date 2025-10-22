@@ -149,6 +149,8 @@ SoftUni JS Back-End Workshop
 - [x] Show button only for creators
 
 ### Edit movies
+- [ ] Add edit page
+
 
 ### Delete movies
 - [x] Add delete action
