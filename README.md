@@ -159,4 +159,6 @@ SoftUni JS Back-End Workshop
 
 ### Bonus
 - [ ] Automatic login on register
+- [x] Edit categories
 - [ ] Invalidate JWT token on logout
+- [ ] Refresh token
