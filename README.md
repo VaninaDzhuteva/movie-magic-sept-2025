@@ -150,7 +150,8 @@ SoftUni JS Back-End Workshop
 
 ### Edit movies
 
-### Delete movis
+### Delete movies
+- [ ] Add delete action
 
 ### Bonus
 - [ ] Automatic login on register

@@ -41,14 +41,18 @@ function create(movieData, userId) {
 }
 
 async function attach(movieId, castId) {
-  const movie = await Movie.findById(movieId);
-  movie.casts.push(castId);
-  return movie.save();
+  // const movie = await Movie.findById(movieId);
+  // movie.casts.push(castId);
+  // return movie.save();
 
   // Add relation with MongoDB
-  //return Movie.findByIdAndUpdate(movieId, {$push: {casts: castId}});
+  return Movie.findByIdAndUpdate(movieId, {$push: {casts: castId}});
+}
+
+function deleteMovie (movieId) {
+  return Movie.findByIdAndDelete(movieId);
 }
 
 export default {
-    getAll, create, getOne, attach, getOneDetailed
+    getAll, create, getOne, attach, getOneDetailed, deleteMovie
 }
