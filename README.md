@@ -162,3 +162,4 @@ SoftUni JS Back-End Workshop
 - [x] Edit categories
 - [ ] Invalidate JWT token on logout
 - [ ] Refresh token
+- [ ] Async jwt
