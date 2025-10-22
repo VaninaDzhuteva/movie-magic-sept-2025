@@ -178,6 +178,8 @@ SoftUni JS Back-End Workshop
 - [x] Add resources
 - [x] Add error container in html
 - [x] Add dynamic error notification text; render it conditionally
-- [ ] Retain form data
+- [x] Retain form data
+- [x] Extract get error message
+- [x] User login error handling
 
 ### Bonus
