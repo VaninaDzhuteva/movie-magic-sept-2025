@@ -158,7 +158,7 @@ SoftUni JS Back-End Workshop
 - [x] Handle edit
 
 ### Bonus
-- [ ] Automatic login on register
+- [x] Automatic login on register
 - [x] Edit categories
 - [ ] Invalidate JWT token on logout
 - [ ] Refresh token

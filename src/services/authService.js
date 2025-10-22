@@ -1,11 +1,14 @@
 import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
 
 import User from "../models/User.js";
-import { JWT_SECRET } from '../config/constans.js';
+import { generateAuthToken } from '../utils/tokenUtils.js';
 
 async function register(userData) {
-    return await User.create(userData);
+    const user = await User.create(userData);
+
+    const token = generateAuthToken(user);
+
+    return token;
 }
 
 async function login(email, password) {
@@ -24,14 +27,7 @@ async function login(email, password) {
     }
 
     // create token
-    const payload = {
-        id: user.id,
-        email: user.email
-    }
-
-    const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '2h'});
-
-    return token;
+    const token = generateAuthToken(user);
 
 }
 
