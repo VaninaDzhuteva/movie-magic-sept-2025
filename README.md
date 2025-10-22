@@ -155,6 +155,7 @@ SoftUni JS Back-End Workshop
 ### Delete movies
 - [x] Add delete action
 - [x] Add creator validation
+- [x] Handle edit
 
 ### Bonus
 - [ ] Automatic login on register

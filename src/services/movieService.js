@@ -53,6 +53,10 @@ function deleteMovie (movieId) {
   return Movie.findByIdAndDelete(movieId);
 }
 
+function edit(movieId, movieData) {
+    return Movie.findByIdAndUpdate(movieId, movieData);
+}
+
 export default {
-    getAll, create, getOne, attach, getOneDetailed, deleteMovie
+    getAll, create, getOne, attach, edit, getOneDetailed, deleteMovie
 }
