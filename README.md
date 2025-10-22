@@ -176,5 +176,7 @@ SoftUni JS Back-End Workshop
 
 ### Error handling
 - [ ] Add resources
+- [ ] Add error container in html
+- [ ] Add dynamic error notification text
 
 ### Bonus
