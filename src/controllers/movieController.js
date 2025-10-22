@@ -6,22 +6,28 @@ import { isAuth } from "../middlewares/authMiddleware.js";
 const movieController = Router();
 
 // Create movie show page
-movieController.get('/create', isAuth, (req, res) => {    
-    res.render('movies/create', {pageTitle: 'Create Movie'});
+movieController.get('/create', isAuth, (req, res) => {
+    res.render('movies/create', { pageTitle: 'Create Movie' });
 });
 
 // Create movie action
 movieController.post('/create', isAuth, async (req, res) => {
     const movieData = req.body;
     const userId = req.user.id;
+    try {
+        await movieService.create(movieData, userId);
 
-    await movieService.create(movieData, userId);
+        res.redirect('/');
+    } catch (err) {
+        const errorMessage = getErrorMessage(err);
 
-    res.redirect('/');
+        res.status(400).render('movie/create', { error: errorMessage, movie: movieData });
+    }
+
 });
 
 //Show details page
-movieController.get('/:movieId/details', async(req, res) => {
+movieController.get('/:movieId/details', async (req, res) => {
     const movieId = req.params.movieId;
     const movie = await movieService.getOneDetailed(movieId);
     //const movieCasts = await castService.getAll({includes: movie.casts});
@@ -29,8 +35,8 @@ movieController.get('/:movieId/details', async(req, res) => {
     const ratingViewData = '&#x2605;'.repeat(Math.trunc(movie.rating));
 
     const isCreator = movie.creator && movie.creator.equals(req.user?.id);
-    
-    res.render('movies/details', { movie, rating:ratingViewData, isCreator });
+
+    res.render('movies/details', { movie, rating: ratingViewData, isCreator });
 });
 
 // Show search page
@@ -85,7 +91,7 @@ movieController.get('/:movieId/edit', async function (req, res) {
 
     const categoriesViewData = getMovieCategoryViewData(movie.category);
     console.log(categoriesViewData);
-    
+
 
     res.render('movies/edit', { movie, categories: categoriesViewData });
 });
@@ -109,7 +115,7 @@ function getMovieCategoryViewData(selectedCategory) {
         { value: 'short-film"', label: 'Short Film' },
     ];
 
-    const viewData = categories.map(category => ({ ...category, selected: selectedCategory === category.value ? 'selected' : ''}));
+    const viewData = categories.map(category => ({ ...category, selected: selectedCategory === category.value ? 'selected' : '' }));
 
     return viewData;
 }
