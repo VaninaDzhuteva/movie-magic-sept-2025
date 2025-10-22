@@ -175,8 +175,9 @@ SoftUni JS Back-End Workshop
 - [x] Validate passwords in model
 
 ### Error handling
-- [ ] Add resources
-- [ ] Add error container in html
-- [ ] Add dynamic error notification text
+- [x] Add resources
+- [x] Add error container in html
+- [x] Add dynamic error notification text; render it conditionally
+- [ ] Retain form data
 
 ### Bonus
