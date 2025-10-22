@@ -170,7 +170,11 @@ SoftUni JS Back-End Workshop
 
 ### Validation
 - [x] Validate movie
-- [ ] Validate cast
-- [ ] Validate user
+- [x] Validate cast
+- [x] Validate user
+- [x] Validate passwords in model
+
+### Error handling
+- [ ] Add resources
 
 ### Bonus

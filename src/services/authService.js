@@ -13,9 +13,9 @@ async function register(userData) {
     }
 
     // Check if passwords match
-    // if (userData.password !== userData.rePassword) {
-    //     throw new Error("Passwords must match!");
-    // }
+    if (userData.password !== userData.rePassword) {
+        throw new Error("Passwords must match!");
+    }
 
     const user = await User.create(userData);
 
