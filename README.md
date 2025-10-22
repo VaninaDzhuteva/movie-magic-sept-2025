@@ -172,3 +172,5 @@ SoftUni JS Back-End Workshop
 - [x] Validate movie
 - [ ] Validate cast
 - [ ] Validate user
+
+### Bonus
