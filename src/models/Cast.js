@@ -5,7 +5,7 @@ const castSchema = new Schema({
         type: String,
         required: [true, 'Cast name is required!'],
         minLength: [5, 'Name is too short!'],
-        match: [/ˆ[a-zA-Z0-9 ]+$/, 'Name has some invalid characters!']
+        match: [/^[a-zA-Z0-9 ]+$/, 'Name has some invalid characters!']
     },
     age: {
         type: Number,
@@ -17,12 +17,12 @@ const castSchema = new Schema({
         type: String,
         required: [true, 'Born age is required!'],
         min: [0, 'Born can not be less than 10'],
-        match: [/ˆ[a-zA-Z0-9 ]+$/, 'Born has some invalid characters!']
+        match: [/^[a-zA-Z0-9 ]+$/, 'Born has some invalid characters!']
     },
     imageUrl: {
         type: String,
         required: [true, 'Image url is required!'],
-        match: [/ˆhttps?:\/\//, 'Image url is invalid!']
+        match: [/^https?:\/\//, 'Image url is invalid!']
     },
 });
 

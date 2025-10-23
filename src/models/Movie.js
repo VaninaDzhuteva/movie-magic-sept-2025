@@ -18,13 +18,13 @@ const movieSchema = new Schema({
         type: String,
         required: [true, 'Movie genre is required!'],
         minLength: [5, 'Movie genre is too short!'],
-        match: [/ˆ[a-zA-Z0-9 ]+$/, 'Genre has some invalid characters!']
+        match: [/^[a-zA-Z0-9 ]+$/, 'Genre has some invalid characters!']
     },
     director: {
         type: String,
         required: [true, 'Movie director is required!'],
         minLength: [5, 'Movie director is too short!'],
-        match: [/ˆ[a-zA-Z0-9 ]+$/, 'Director has some invalid characters!']
+        match: [/^[a-zA-Z0-9 ]+$/, 'Director has some invalid characters!']
     },
     year: {
         type: Number,
@@ -35,7 +35,7 @@ const movieSchema = new Schema({
     imageUrl: {
         type: String,
         required: [true, 'Movie image is required!'],
-        match: [/ˆhttps?:\/\//, 'Image url is invalid!']
+        match: [/^https?:\/\//, 'Image url is invalid!']
     },
     rating: {
         type: Number,
@@ -47,7 +47,7 @@ const movieSchema = new Schema({
         type: String,
         required: [true, 'Movie Description is required!'],
         minLength: [20, 'Description should be at least 20 characters!'],
-        match: [/ˆ[a-zA-Z0-9 ]+$/, 'Description has some invalid characters!']
+        match: [/^[a-zA-Z0-9 ]+$/, 'Description has some invalid characters!']
     },
     casts: [{
         type: Types.ObjectId,

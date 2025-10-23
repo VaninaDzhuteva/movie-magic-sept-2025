@@ -183,5 +183,6 @@ SoftUni JS Back-End Workshop
 - [x] User login error handling
 - [x] Create movie page error handling
 - [x] Retain movie category
+- [x] Create cast error handling
 
 ### Bonus
