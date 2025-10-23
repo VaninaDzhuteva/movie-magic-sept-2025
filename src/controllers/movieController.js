@@ -2,26 +2,36 @@ import { Router } from "express";
 import movieService from "../services/movieService.js";
 import castService from "../services/castService.js";
 import { isAuth } from "../middlewares/authMiddleware.js";
+import { getErrorMessage } from "../utils/errorUtils.js";
 
 const movieController = Router();
 
 // Create movie show page
 movieController.get('/create', isAuth, (req, res) => {
-    res.render('movies/create', { pageTitle: 'Create Movie' });
+    res.render('movies/create', { pageTitle: 'Create Movie', categories: getMovieCategoryViewData() });
 });
 
 // Create movie action
 movieController.post('/create', isAuth, async (req, res) => {
     const movieData = req.body;
     const userId = req.user.id;
+    
     try {
         await movieService.create(movieData, userId);
 
         res.redirect('/');
     } catch (err) {
         const errorMessage = getErrorMessage(err);
-
-        res.status(400).render('movie/create', { error: errorMessage, movie: movieData });
+        const categoriesViewData = getMovieCategoryViewData(movieData.category);
+        console.log(movieData.category);
+        
+        console.log(categoriesViewData);
+        
+        res.status(400).render('movies/create', { 
+            error: errorMessage, 
+            movie: movieData, 
+            categories: categoriesViewData
+         });
     }
 
 });

@@ -10,8 +10,9 @@ const movieSchema = new Schema({
         type: String,
         required: [true, 'Movie category is required!'],
         enum: {
-            values: ['tv-show', 'animation', 'movie', 'documentary', 'short-film']
-        }
+            values: ['tv-show', 'animation', 'movie', 'documentary', 'short-film'],
+            message: 'Your category is invalid!'
+        },
     },
     genre: {
         type: String,

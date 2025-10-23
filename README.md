@@ -181,7 +181,7 @@ SoftUni JS Back-End Workshop
 - [x] Retain form data
 - [x] Extract get error message
 - [x] User login error handling
-- [ ] Create movie page 
-- [ ] Retain movie category
+- [x] Create movie page error handling
+- [x] Retain movie category
 
 ### Bonus
