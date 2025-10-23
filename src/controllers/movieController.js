@@ -3,7 +3,7 @@ import movieService from "../services/movieService.js";
 import castService from "../services/castService.js";
 import { isAuth } from "../middlewares/authMiddleware.js";
 import { getErrorMessage } from "../utils/errorUtils.js";
-import { Types } from "mongoose";
+import { isMovieCreator } from "../middlewares/movieMiddleware.js";
 
 const movieController = Router();
 
@@ -58,8 +58,6 @@ movieController.get('/:movieId/details', async (req, res) => {
         // 02
         res.render('404', { error: 'Movie not found!' });
     }
-
-
 });
 
 // Show search page
@@ -106,12 +104,16 @@ movieController.get('/:movieId/delete', isAuth, async (req, res) => {
 });
 
 // Show edit page
-movieController.get('/:movieId/edit', async function (req, res) {
+movieController.get('/:movieId/edit', isAuth, isMovieCreator, async function (req, res) {
     const movieId = req.params.movieId;
 
     try {
         const movie = await movieService.getOne(movieId);
-
+        
+        // Validate if user is creator
+        // if (movie.creator.toString() !== req.user.id) {
+        //     res.redirect(`/movies/${movieId}/details`, { error: 'Only creator can edit this movie!'});
+        // }
         const categoriesViewData = getMovieCategoryViewData(movie.category);
 
         res.render('movies/edit', { movie, categories: categoriesViewData });
@@ -121,7 +123,7 @@ movieController.get('/:movieId/edit', async function (req, res) {
 });
 
 // Edit movie action
-movieController.post('/:movieId/edit', async (req, res) => {
+movieController.post('/:movieId/edit', isAuth, isMovieCreator, async (req, res) => {
     const movieId = req.params.movieId;
     const movieData = req.body;
 

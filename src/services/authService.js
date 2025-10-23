@@ -42,6 +42,7 @@ async function login(email, password) {
     // create token
     const token = generateAuthToken(user);
 
+    return token;
 }
 
 export default {
