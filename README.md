@@ -185,6 +185,8 @@ SoftUni JS Back-End Workshop
 - [x] Retain movie category
 - [x] Create cast error handling
 - [x] Add details page error handling
+- [x] Add edit page error handling
+- [x] Fix movie category on edit
 
 ### Bonus
 - [ ] Dynamic year check
