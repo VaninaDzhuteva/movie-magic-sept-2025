@@ -184,5 +184,10 @@ SoftUni JS Back-End Workshop
 - [x] Create movie page error handling
 - [x] Retain movie category
 - [x] Create cast error handling
+- [x] Add details page error handling
 
 ### Bonus
+- [ ] Dynamic year check
+- [ ] Guard editfromnon creator
+- [ ] Character name
+- [ ] Add more password validations

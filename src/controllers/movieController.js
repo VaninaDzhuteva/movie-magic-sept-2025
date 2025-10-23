@@ -3,6 +3,7 @@ import movieService from "../services/movieService.js";
 import castService from "../services/castService.js";
 import { isAuth } from "../middlewares/authMiddleware.js";
 import { getErrorMessage } from "../utils/errorUtils.js";
+import { Types } from "mongoose";
 
 const movieController = Router();
 
@@ -15,7 +16,7 @@ movieController.get('/create', isAuth, (req, res) => {
 movieController.post('/create', isAuth, async (req, res) => {
     const movieData = req.body;
     const userId = req.user.id;
-    
+
     try {
         await movieService.create(movieData, userId);
 
@@ -24,14 +25,14 @@ movieController.post('/create', isAuth, async (req, res) => {
         const errorMessage = getErrorMessage(err);
         const categoriesViewData = getMovieCategoryViewData(movieData.category);
         console.log(movieData.category);
-        
+
         console.log(categoriesViewData);
-        
-        res.status(400).render('movies/create', { 
-            error: errorMessage, 
-            movie: movieData, 
+
+        res.status(400).render('movies/create', {
+            error: errorMessage,
+            movie: movieData,
             categories: categoriesViewData
-         });
+        });
     }
 
 });
@@ -39,14 +40,22 @@ movieController.post('/create', isAuth, async (req, res) => {
 //Show details page
 movieController.get('/:movieId/details', async (req, res) => {
     const movieId = req.params.movieId;
-    const movie = await movieService.getOneDetailed(movieId);
+
     //const movieCasts = await castService.getAll({includes: movie.casts});
 
-    const ratingViewData = '&#x2605;'.repeat(Math.trunc(movie.rating));
+    try {
+        const movie = await movieService.getOneDetailed(movieId);
 
-    const isCreator = movie.creator && movie.creator.equals(req.user?.id);
+        const ratingViewData = '&#x2605;'.repeat(Math.trunc(movie.rating));
 
-    res.render('movies/details', { movie, rating: ratingViewData, isCreator });
+        const isCreator = movie.creator && movie.creator.equals(req.user?.id);
+
+        res.render('movies/details', { movie, rating: ratingViewData, isCreator });
+    } catch (err) {
+        res.redirect('/404');
+    }
+
+
 });
 
 // Show search page
