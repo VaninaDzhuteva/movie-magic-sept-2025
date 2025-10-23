@@ -189,6 +189,7 @@ SoftUni JS Back-End Workshop
 - [x] Fix movie category on edit
 
 ### Bonus
+- [ ] Dynamic page title advanced
 - [ ] Dynamic year check
 - [ ] Guard editfromnon creator
 - [ ] Character name
